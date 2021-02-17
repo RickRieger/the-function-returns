@@ -2,10 +2,13 @@
  * YOUR CODE HERE *
  ******************/
 
-const greeting = 'hello';
+let greeting = 'hello';
 let sum = 0;
 let prod = 0;
 
+function greet(person){
+  greeting = 'Hello' + ' ' + person;
+}
 
 
 function sumOfTwo(a,b){
@@ -15,6 +18,12 @@ sum = a + b;
 function multiply(a,b,c){
   prod = a *b*c
 }
+
+function sayHi(name){
+  return 'Hello ' + name + '!';
+}
+
+
 
 
 
