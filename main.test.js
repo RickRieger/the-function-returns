@@ -2,6 +2,42 @@
  * YOUR CODE HERE *
  ******************/
 
+const greeting = 'hello';
+let sum = 0;
+let prod = 0;
+
+
+
+function sumOfTwo(a,b){
+sum = a + b;
+}
+
+function multiply(a,b,c){
+  prod = a *b*c
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 /*********************************************************************************************************************
 
  * CODE BELOW HERE IS FOR INTERNAL USE ONLY! IT ENSURES THAT THE TESTING *
