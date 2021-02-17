@@ -23,8 +23,16 @@ function sayHi(name){
   return 'Hello ' + name + '!';
 }
 
+function returnWhatISay(sentence){
+return sentence
+}
 
-
+function divide(a,b){
+return a/b;
+}
+function remainder (a,b){
+  return a%b;
+}
 
 
 
