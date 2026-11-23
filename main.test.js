@@ -2,7 +2,7 @@
  * YOUR CODE HERE *
  ******************/
 
-let greeting = 'hello';
+let greeting = 'Hello';
 let sum = 0;
 let prod = 0;
 
@@ -33,6 +33,17 @@ return a/b;
 function remainder (a,b){
   return a%b;
 }
+
+// Extra test added during the 2026 cleanup (not part of the original assignment).
+// It runs before the original tests change these variables, and checks the
+// starting values the instructions ask for; the original tests never check them.
+describe('starting values', () => {
+  it("match the instructions: greeting 'Hello', sum 0, prod 0", () => {
+    expect(greeting).toBe('Hello');
+    expect(sum).toBe(0);
+    expect(prod).toBe(0);
+  });
+});
 
 
 
