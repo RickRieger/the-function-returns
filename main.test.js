@@ -2,58 +2,50 @@
  * YOUR CODE HERE *
  ******************/
 
-let greeting = 'hello';
+let greeting = 'Hello';
 let sum = 0;
 let prod = 0;
 
-function greet(person){
-  greeting = 'Hello' + ' ' + person;
+// Functions that change global variables
+function greet(person) {
+  greeting = 'Hello ' + person;
 }
 
-
-function sumOfTwo(a,b){
-sum = a + b;
+function sumOfTwo(a, b) {
+  sum = a + b;
 }
 
-function multiply(a,b,c){
-  prod = a *b*c
+function multiply(a, b, c) {
+  prod = a * b * c;
 }
 
-function sayHi(name){
+// Functions that return a value
+function sayHi(name) {
   return 'Hello ' + name + '!';
 }
 
-function returnWhatISay(sentence){
-return sentence
+function returnWhatISay(sentence) {
+  return sentence;
 }
 
-function divide(a,b){
-return a/b;
-}
-function remainder (a,b){
-  return a%b;
+function divide(a, b) {
+  return a / b;
 }
 
+function remainder(a, b) {
+  return a % b;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+// Extra test added during the 2026 cleanup (not part of the original assignment).
+// It runs before the original tests change these variables, and checks the
+// starting values the instructions ask for; the original tests never check them.
+describe('starting values', () => {
+  it("match the instructions: greeting 'Hello', sum 0, prod 0", () => {
+    expect(greeting).toBe('Hello');
+    expect(sum).toBe(0);
+    expect(prod).toBe(0);
+  });
+});
 
 /*********************************************************************************************************************
 
