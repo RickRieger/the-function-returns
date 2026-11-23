@@ -6,32 +6,34 @@ let greeting = 'Hello';
 let sum = 0;
 let prod = 0;
 
-function greet(person){
-  greeting = 'Hello' + ' ' + person;
+// Functions that change global variables
+function greet(person) {
+  greeting = 'Hello ' + person;
 }
 
-
-function sumOfTwo(a,b){
-sum = a + b;
+function sumOfTwo(a, b) {
+  sum = a + b;
 }
 
-function multiply(a,b,c){
-  prod = a *b*c
+function multiply(a, b, c) {
+  prod = a * b * c;
 }
 
-function sayHi(name){
+// Functions that return a value
+function sayHi(name) {
   return 'Hello ' + name + '!';
 }
 
-function returnWhatISay(sentence){
-return sentence
+function returnWhatISay(sentence) {
+  return sentence;
 }
 
-function divide(a,b){
-return a/b;
+function divide(a, b) {
+  return a / b;
 }
-function remainder (a,b){
-  return a%b;
+
+function remainder(a, b) {
+  return a % b;
 }
 
 // Extra test added during the 2026 cleanup (not part of the original assignment).
@@ -44,27 +46,6 @@ describe('starting values', () => {
     expect(prod).toBe(0);
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 /*********************************************************************************************************************
 
